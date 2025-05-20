@@ -74,7 +74,7 @@ async function enviarFormulario() {
     }
 
     try {
-        const resposta = await fetch('http://localhost:5000/conflito', {
+        const resposta = await fetch('https://projetoiabackend.vercel.app/conflito', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ informacoes: nacoes })
