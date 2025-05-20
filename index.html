@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧭 Buscador de conflito com IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100 font-sans py-8">
+    <div class="fixed inset-0 -z-10 opacity-50 bg-[url('img/fundo.jpg')] bg-cover bg-center"></div>
+    <div class="flex-grow"> <div class="container max-w-4xl mx-auto text-center p-4">
+            <h1 class="text-3xl font-bold mb-6 text-gray-800">🧭 Buscador de Conflitos</h1>
+
+            <div id="formulario" class="bg-white p-6 rounded-xl shadow-md mb-6 border border-gray-200 max-w-xl mx-auto">
+                <h3 class="text-xl font-semibold mb-4 text-gray-700">Informe as informações que quer utilizar</h3>
+
+                <div id="infos" class="space-y-3 mb-4">
+                    <div class="nacao-row flex items-center space-x-2">
+                        <input type="text" class="nacao nacao-input flex-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700" placeholder="Informe um país...">
+                        <button class="btn-danger bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed transition duration-300 text-sm">Excluir</button>
+
+                    </div>
+                     <div class="nacao-row flex items-center space-x-2">
+                        <input type="text" class="nacao nacao-input flex-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700" placeholder="Informe um país...">
+                        <button class="btn-danger bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed transition duration-300 text-sm">Excluir</button>
+                    </div>
+                </div>
+
+                <div class="flex justify-center">
+                    <button id="add-nacoes-btn" class="btn-primary bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2 transition duration-300 text-md">Adicionar País</button>
+
+                    <button id="generate-recipe-btn" class="btn-success bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 mr-2 text-md">Procurar conflito</button>
+
+                    <button id="clear-infos-btn" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition duration-300 text-md">Limpar Campos</button>
+                </div>
+            </div>
+
+            <div id="response" class="response bg-white p-6 rounded-xl shadow-md border border-gray-200 mt-6 text-left hidden max-w-xl mx-auto">
+                Carregando...
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="text-center mt-6">
+            <p>&copy; 2025 - <strong>Desenvolvido por: Gabriel Alves de Macedo</strong></p>
+        </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>
